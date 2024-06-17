@@ -22,7 +22,7 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6253605770:AAF5qGr1wfNbdMUV743RjFnRSFfk4hoCaiU",
+             bot_token= "6334571989:AAEAfGbsyWdfWEnnHDMNZCAuV1WKYgCsn-4",
              api_id= 24250238,
              api_hash= "cb3f118ce5553dc140127647edcf3720")
 
@@ -57,7 +57,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["madno"]))
+@bot.on_message(filters.command(["fuck"]))
 async def account_login(bot: Client, m: Message):
     me2 = (await bot.get_me()).mention
     editable = await m.reply_text(
@@ -165,7 +165,7 @@ async def account_login(bot: Client, m: Message):
 
             elif '/master.mpd' in url:
              id =  url.split("/")[-2]
-             url =  "https://d26g5bnklkwsh4.cloudfront.net/" + id + "/master.m3u8"
+             url =  "https://pw.pwjarvis.tech?v=" + id + "&quality=720"
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
             name = f'{str(count).zfill(3)}) {name1[:60]}'
@@ -182,8 +182,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**𝐕𝐢𝐝_𝐢𝐝🎬➤ {str(count).zfill(3)}\n𝐓𝐢𝐭𝐥𝐞 ➤ {𝗻𝗮𝗺𝗲𝟭} {res} {MR}.mkv\n𝐁𝐚𝐭𝐜𝐡 ➤ {raw_text0}\n\n🌟𝔻ᴏᴡɴʟᴏᴀᴅ 𝔹ʏ ✨ [madno� ᥫ᭡](http://t.me/ur_madno)\n**'
-                cc1 = f'**𝐕𝐢𝐝_𝐢𝐝🎬➤ {str(count).zfill(3)}\n𝐓𝐢𝐭𝐥𝐞 ➤ {𝗻𝗮𝗺𝗲𝟭} {MR}.pdf \n𝐁𝐚𝐭𝐜𝐡 ➤ {raw_text0}\n\n🌟𝔻ᴏᴡɴʟᴏᴀᴅ 𝔹ʏ ✨ [madno� ᥫ᭡](http://t.me/ur_madno)\n**'
+                cc = f'**{str(count).zfill(3)}\n𝐓𝐢𝐭𝐥𝐞 ➤ {𝗻𝗮𝗺𝗲𝟭}.mp4\n𝐁𝐚𝐭𝐜𝐡 ➤ {raw_text0}\n\n🌟𝔻ᴏᴡɴʟᴏᴀᴅ 𝔹ʏ ✨ {MR}\n**'
+                cc1 = f'**{str(count).zfill(3)}\n𝐓𝐢𝐭𝐥𝐞 ➤ {𝗻𝗮𝗺𝗲𝟭}.pdf \n𝐁𝐚𝐭𝐜𝐡 ➤ {raw_text0}\n\n🌟𝔻ᴏᴡɴʟᴏᴀᴅ 𝔹ʏ ✨ {MR}\n**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
